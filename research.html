@@ -4,102 +4,185 @@
     Released under the Simplified BSD License/FreeBSD (2-clause) License.
     https://github.com/mavroudisv/plain-academic
 -->
-
 <html lang="en">
 <head>
-  <title>mbondeli.github.io</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
+    <title>mbondeli.github.io</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
+    <style>
+        .abstract {
+            display: none;
+            padding-left: 20px;
+            border-left: 2px solid #007BFF;
+            margin-top: 10px;
+        }
+        .title {
+            cursor: pointer;
+            font-weight: normal;
+            color: black; /* Changed to black */
+            margin-bottom: 5px;
+        }
+        .paper {
+            margin-bottom: 20px; /* Increased space between papers */
+        }
+        .links, .show-abstract {
+            cursor: pointer;
+            font-weight: normal;
+            color: #007BFF;
+            margin-bottom: 5px;
+        }
+        .section-title {
+            font-size: 24px;
+            font-weight: normal;
+            margin-bottom: 10px; /* Space below section titles */
+        }
+        .section-title:first-of-type {
+            margin-top: 0; /* No space above the first section title */
+        }
+        .section-title:not(:first-of-type) {
+            margin-top: 30px; /* Space above subsequent section titles */
+        }
+    </style>
 </head>
 <body>
-
-
-<!-- Navigation -->
-	<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
-	  <div class="container">
-		<div class="navbar-header">
-		  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-		</div>
-
-		<!-- Collect the nav links, forms, and other content for toggling -->
-		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-		  <ul class="nav navbar-nav">
-				  <li><a href="index.html">Home</a></li>
-				  <li><a href="teaching.html">Teaching</a></li>
-				  <li><a href="research.html">Research</a></li> 
-		  </ul>
-		</div>
-	  </div>
-	</nav>
-  
-  <!-- Page Content -->
-    <div class="container">
-
-        <div class="row">
-
-            <!-- Entries Column -->
-            <div class="col-md-8" style="height: 100vh;">
-                
-<div style="font-family: 'Helvetica', sans-serif; font-size: 24px;">Working Papers</div><br>
-
-
-               					<p><b>Threats of Violence and Political Ambition: Experimental Evidence</b></p>
-<p><b>Conditional Humanitarianism: Citizen Preferences for Economic Sanctions in DemocraticSender States</b><i><br>with Isabela Mares and Ryan Pike</i></p>
- 
-                <div style="margin-top:3%; text-align:justify;">                
-
-
-<div style="font-family: 'Helvetica', sans-serif; font-size: 24px;">Work in Progress</div><br>
-
-<p><b>Disturbing the Peace: Mass Politics and Political Violence in Weimar Germany (book project)</b></p>
-<p><b>Using Dimensions of Indifference to Embed Randomized Experiments in the Normal Operationsof Organizations</b><i><br>with Christopher Harshaw and Fredrik Sävje</I></p>
-
- 
-                </div>
-            </div> 
-
-            <!-- Contact Info on the Sidebar -->
-            <div class="col-md-4">
-                <div style="font-family: 'Helvetica', sans-serif; font-size: 24px;">Moritz Emanuel Bondeli</div><br>
-                <p><b>moritz.bondeli[at]yale.edu</b><br>
-                <p>Department of Political Science<br>
-                Yale University<br>
-                115 Prospect Street, Rosenkranz Hall<br>
-                New Haven, CT 06511 <br>
-                United States<br>
-                </p>
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
             </div>
-            
-            
-            <!-- Links on the Sidebar -->
-            <div class="col-md-4" style="margin-top:2%">
-<dd><a href="https://mbondeli.github.io/files/bondeli-cv.pdf" target="_blank">CV</a></dd>
-              <dd><a href="https://bsky.app/profile/mbondeli.bsky.social" target="_blank">Bluesky</a></dd>
-              <dd><a href="https://www.linkedin.com/in/moritz-emanuel-bondeli-ba45a5100/" target="_blank">LinkedIn</a></dd>
-<dd> <a style="color:#b5bec9;font-size:0.8em" href="https://github.com/mavroudisv/plain-academic" target="_blank">Plain-Academic Design by Vasilios Mavroudis</a></dd>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Home</a></li>
+			<li><a href="research.html">Research</a></li>
+                    <li><a href="teaching.html">Teaching</a></li> 
+                </ul>
             </div>
-
-            
         </div>
+    </nav>
 
+    <div class="container">
+        <div class="row">
+            <!-- Main Content -->
+            <div class="col-md-8">
+                <div class="paper-list">
+                    <!-- Working Papers Section -->
+                    <div class="section-title">Working Papers</div>
+                    <div class="paper">
+                        <div class="title">
+                           Threats of Violence and Political Ambition: Experimental Evidence
+                        </div>
+                        <div class="links">
+                            <a href="https://mbondeli.github.io/files/threats-ambition-bondeli.pdf" target="_blank">[Paper]</a> <a href="https://osf.io/f3pgd" target="_blank">[OSF Pre-Registration]</a>
+                        </div>
+                        <div class="show-abstract" data-toggle="abstract1">
+                            Abstract
+                        </div>
+                        <div id="abstract1" class="abstract">
+Politicians and candidates for political office are increasingly subject to threats, harassmentand outright violence. Does anticipated exposure to such violence affectpolitical ambition? I present evidence from an original survey fielded with a largesample of US citizens (n = 4,582) to document that concerns about exposure toviolent speech, harassment and physical violence are salient, that Americans on averageoverestimate the risk of such exposure relative to a scholarly benchmark, andthat overestimation is particularly pronounced among women, queer and nonwhitecitizens. I then estimate the effect of a randomized intervention which exposes individualsto corrective aggregate information about the risk of facing violence whenin office. Downward-correcting aggregate information has a small positive effect onindividual willingness to run for office, and a large positive effect on the willingness tosupport a hypothetical peer running for office. The increase in support for peer ambitionis nearly twice as large for hypothetical female peers compared to hypotheticalmale peers. The intervention provided effective reassurance that women, queer andnonwhite citizens can safely pursue careers in politics.
+                        </div>
+                    </div>
+                    <div class="paper">
+                        <div class="title">
+                            <i> Noblesse Aveugle? </i> Reactionary Bureaucrats, Political Violence and Democratic Erosion in Weimar Germany <br> <i> available upon request </i>
+                        </div>
+                        <div class="show-abstract" data-toggle="abstract2">
+                            Abstract
+                        </div>
+                        <div id="abstract2" class="abstract">
+A distinctive feature of the first German transition to democracy after World War Iwas the paucity of meaningful democratizing reform of the sprawling federal, state,and local bureaucracies. In this paper, I argue that insufficient efforts to reforma deeply anti-democratic state apparatus prevented the consolidation of democraticgovernance in the Interwar period. Focusing on the state of Prussia and the 1917-1932 period, I build a county-level panel combining original career data on locallaw enforcement officials, novel biographical data on the universe of candidates forelected office and secondary data on incidents of politically motivated violence andelectoral outcomes. Leveraging a difference-in-differences design, I demonstrate thatreplacement of reactionary law enforcement officials by outsider candidates vetted bythe democratic central government (i) led to a reduction in the incidence of politicallymotivated violence, (ii) reduced the number of Nazi candidates running for office, and(iii) increased electoral support for pro-democratic parties at the expense of the Naziparty. My paper identifies the persistence of autocratic bureaucracies as a crucialobstacle to democratic consolidation and efforts to limit political violence.
+                        </div>
+                    </div>
+<div class="paper">
+                        <div class="title">
+Conditional Humanitarianism: Citizen Preferences for Economic Sanctions in DemocraticSender States <br> with Isabela Mares and Ryan Pike, <i> under review </i>
+                        </div>
+                        <div class="show-abstract" data-toggle="abstract3">
+                            Abstract
+                        </div>
+                        <div id="abstract3" class="abstract">
+Economic sanctions are a critical tool of international diplomacy. Existing scholarship showsthat citizens in democratic sender states value sanctions which are effective in producing policyconcessions. However, citizens also seek to limit the adverse humanitarian consequences ofsanction imposition. How do citizens trade off between these objectives? We develop a theoryof sanctions preferences where citizens (i) value policy concessions, (ii) hold humanitarianmotivations, and (iii) hold beliefs about how policy change occurs in autocracies. We arguethat citizens are conditional humanitarians – humanitarian concerns dominate effectivenessconsiderations only if policy concessions are unlikely. Results from a preregistered willingness to pay experiment examining the preferences of German citizens on sanctions against Russiaafter its invasion of Ukraine confirm the predictions of our theory.
+                        </div>
+                    </div>
 
+<div class="paper">
+                        <div class="title">
+Trust the Rich to 'Tax the Rich?' Voter Inferences from Candidate Affluence
+                        </div>
+                        <div class="links">
+                            <a href="https://mbondeli.github.io/files/trust-to-tax-bondeli.pdf" target="_blank">[Paper]</a>
+                        </div>
+                        <div class="show-abstract" data-toggle="abstract4">
+                            Abstract
+                        </div>
+                        <div id="abstract4" class="abstract">
+This paper investigates how information about candidate affluence shapes voters’decision-making at the ballot box. Challenging existing arguments that voters preferaffluent to low-income candidates on competence grounds, I argue that voters useinformation on affluence to infer candidate self-interest and evaluate the credibilityof candidates’ policy promises on redistribution. I hypothesize that populist votersare particularly likely to rely on perceived self-interest as a heuristic for credibility.Evidence from a candidate-choice conjoint experiment lends partial support to myargument. While voters dislike affluent candidates for office across the board, populistvoters are particularly reluctant to support wealthy pro-redistribution candidates. Myfindings help explain why widespread public support for greater redistribution neednot translate into election victories for left parties.
+                        </div>
+                    </div>
 
+                    <!-- Add more papers with abstracts as needed -->
+
+                    <!-- Work in Progress Section -->
+                    <div class="section-title">Work in Progress</div>
+                    <div class="paper">
+                        <div class="title">
+                            Disturbing the Peace: Mass Politics and Political Violence in Weimar Germany (book project)
+                        </div>
+                    </div>
+                    <div class="paper">
+                        <div class="title">
+                            Using Dimensions of Indifference to Embed Randomized Experiments in the Normal Operationsof Organizations <br> with Christopher Harshaw and Fredrik Sävje
+                        </div>
+                    </div>
+                    <!-- Add more papers without abstracts as needed -->
+                </div>
+            </div>
+
+            <!-- Sidebar Content -->
+            <div class="col-md-4">
+                <div class="sidebar-content">
+                    <!-- Contact Info -->
+                    <div style="font-family: 'Helvetica', sans-serif; font-size: 24px;">
+                        Moritz Emanuel Bondeli
+                    </div>
+                    <br>
+                    <p><b>moritz.bondeli[at]yale.edu</b></p>
+                    <p>Department of Political Science<br>
+                    Yale University<br>
+                    115 Prospect Street, Rosenkranz Hall<br>
+                    New Haven, CT 06511 <br>
+                    United States<br>
+                    </p>
+
+                    <!-- Links -->
+                    <div style="margin-top:2%">
+                        <dd><a href="https://mbondeli.github.io/files/bondeli-cv.pdf" target="_blank">CV</a></dd>
+                        <dd><a href="https://bsky.app/profile/mbondeli.bsky.social" target="_blank">Bluesky</a></dd>
+                        <dd><a href="https://www.linkedin.com/in/moritz-emanuel-bondeli-ba45a5100/" target="_blank">LinkedIn</a></dd>
+                        <dd> <a style="color:#b5bec9;font-size:0.8em" href="https://github.com/mavroudisv/plain-academic" target="_blank">Plain-Academic Design by Vasilios Mavroudis</a></dd>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <!-- /.container -->
-    
-    <!-- Other people may like it too! -->
-    <a style="color:#b5bec9;font-size:0.8em; float:right;" href="https://github.com/mavroudisv/plain-academic">Plain Academic</a> 
 
-    
+    <script>
+        $(document).ready(function() {
+            $('.show-abstract').click(function() {
+                var abstractId = $(this).data('toggle');
+                $('#' + abstractId).slideToggle();
+            });
+        });
+    </script>
 </body>
-
 </html>
